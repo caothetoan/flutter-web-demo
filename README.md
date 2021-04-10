@@ -20,3 +20,6 @@ samples, guidance on mobile development, and a full API reference.
 dart pub outdated --mode=null-safety
 dart pub upgrade --null-safety
 
+flutter run --no-sound-null-safety
+
+dart migrate --apply-changes
