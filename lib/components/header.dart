@@ -10,7 +10,7 @@ class Header extends StatelessWidget {
         children: <Widget>[
           SizedBox(width: 10),
           Text(
-            "Site name",
+            "Quiziz",
             style: GoogleFonts.reenieBeanie(fontSize: 18),
           ),
           Spacer(),

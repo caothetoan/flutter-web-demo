@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterwebdemo/components/main_button.dart';
 import 'package:flutterwebdemo/constants.dart';
 import 'package:flutterwebdemo/responsive.dart';
+import 'package:flutterwebdemo/screens/signup/sign_up_screen.dart';
 
 class Jumbotron extends StatelessWidget {
   @override
@@ -31,33 +32,33 @@ class Jumbotron extends StatelessWidget {
                         RichText(
                             text: TextSpan(children: [
                           TextSpan(
-                              text: 'Buy ',
+                              text: 'Play ',
                               style: TextStyle(
                                   fontSize: isDesktop(context) ? 64 : 32,
                                   fontWeight: FontWeight.w800,
                                   color: kTextColor)),
                           TextSpan(
-                              text: 'Cruelty Free',
+                              text: 'Quiz IZ',
                               style: TextStyle(
                                   fontSize: isDesktop(context) ? 64 : 32,
                                   fontWeight: FontWeight.w800,
                                   color: kPrimaryColor)),
                         ])),
                         Text(
-                          'Makeup Products',
+                          'Have fun time',
                           style: TextStyle(
                               fontSize: isDesktop(context) ? 64 : 32,
                               fontWeight: FontWeight.w800),
                         ),
                         Text(
-                          'Online Today!',
+                          'Play now!',
                           style: TextStyle(
                               fontSize: isDesktop(context) ? 64 : 32,
                               fontWeight: FontWeight.w800),
                         ),
                         SizedBox(height: 10),
                         Text(
-                          'Help us in making this world a better place for animals.',
+                          'Start your streak, play with your friend.',
                           textAlign: isMobile(context)
                               ? TextAlign.center
                               : TextAlign.start,
@@ -70,15 +71,25 @@ class Jumbotron extends StatelessWidget {
                           runSpacing: 10,
                           children: <Widget>[
                             MainButton(
-                              title: 'GET STARTED',
+                              title: 'Join a game',
                               color: kPrimaryColor,
-                              tapEvent: () {},
+                              tapEvent: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => SignUpScreen()));
+                              },
                             ),
                             SizedBox(width: 10),
                             MainButton(
-                              title: 'WATCH VIDEO',
+                              title: 'Create an account',
                               color: kSecondaryColor,
-                              tapEvent: () {},
+                              tapEvent: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => SignUpScreen()));
+                              },
                             )
                           ],
                         )
