@@ -31,3 +31,7 @@ flutter run -d chrome --web-renderer canvaskit
 flutter build web --web-renderer html
 
 flutter build web --web-renderer canvaskit --release
+
+void _showWelcomeScreen() {
+  Navigator.of(context).pushNamed('/welcome');
+}

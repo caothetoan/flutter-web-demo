@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterwebdemo/screens/home/home.dart';
+import 'package:flutterwebdemo/screens/signup/sign_up_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
@@ -19,6 +20,10 @@ class MyApp extends StatelessWidget {
           primaryColor: kPrimaryColor,
           textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)),
       home: HomeScreen(),
+      routes: {
+        '/': (context) => SignUpScreen(),
+        '/home': (context) => HomeScreen(),
+      },
     );
   }
 }
