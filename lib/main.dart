@@ -20,10 +20,10 @@ class MyApp extends StatelessWidget {
           primaryColor: kPrimaryColor,
           textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)),
       home: HomeScreen(),
-      routes: {
-        '/': (context) => SignUpScreen(),
-        '/home': (context) => HomeScreen(),
-      },
+      // routes: {
+      //   '/': (context) => SignUpScreen(),
+      //   '/home': (context) => HomeScreen(),
+      // },
     );
   }
 }
